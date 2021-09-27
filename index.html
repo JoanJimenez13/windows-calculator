@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual">0</div>
+            </div>
+            <button class="borrarTodo btn-gray">C</button>
+            <button class="borrar btn-gray">CE</button>
+            <button class="operador btn-gray" value="exponencial">^</button>
+            <button class="operador btn-gray" value="dividir">÷</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador btn-gray" value="multiplicar">×</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador btn-gray" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador btn-gray" value="sumar">+</button>
+            <button class="numero">0</button>
+            <button class="numero">.</button>
+            <button class="negativo" value="-">+/-</button>
+            <button class="operador btn-gray" value="igual">=</button>
+        </div>
+    </div>
+
+    <script src="js/Calculator.js"></script>
+    <script src="js/Display.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
