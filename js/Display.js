@@ -40,6 +40,10 @@ class Display {
         this.operador = tipo;
         if (this.valorAnterior === '' && tipo === 'igual') return
 
+        if (this.valorActual === '-0.') {
+            this.valorActual = this.valorActual.slice(1);
+        }
+
         if (this.valorActual.endsWith('.')) {
             this.valorActual = this.valorActual.slice(0, -1);
         }
