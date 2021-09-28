@@ -85,3 +85,22 @@ button:active{
     font-size: 2em;
     font-weight: bold;
 }
+
+@media (max-width: 450px){
+    .calculadora{
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: 140px repeat(5, 65px);
+    }
+
+    button{
+        font-size: 1.1em;
+    }
+
+    #valor-anterior{
+        font-size: .75em !important;
+    }
+
+    #valor-actual{
+        font-size: 1.3em !important;
+    }   
+}

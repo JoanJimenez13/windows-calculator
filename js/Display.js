@@ -79,7 +79,7 @@ class Display {
             this.borrarTodo();
             this.limpiarTodo = false;
         }
-        if (this.valorActual.length >= 13) return;
+        if (this.valorActual.length >= 16) return;
         if (num === '.' && this.valorActual.includes('.')) return;
         if (num !== '.' && this.valorActual === '0') this.valorActual = '';
 
@@ -92,12 +92,11 @@ class Display {
             this.displayValorActual.style.fontSize = '1.5em';
             this.displayValorAnterior.style.fontSize = '.9em';
         }
-        if (this.valorActual.length < 12) {
+        if (this.valorActual.length < 12 && this.valorAnterior.length < 12) {
             this.displayValorActual.style.fontSize = '2em';
             this.displayValorAnterior.style.fontSize = '1.5em';
         }
         this.displayValorActual.textContent = this.valorActual;
-        console.log(this.valorActual.length)
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
     }
 
